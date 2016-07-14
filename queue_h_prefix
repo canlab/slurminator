@@ -1,0 +1,18 @@
+#!/bin/bash
+
+#Wall Clock time
+#PBS -l walltime=99:00:00
+
+#Merge stdout and stderr
+#PBS -j oe
+
+#Sets my email
+#PBS -M weflen@colorado.edu
+
+#Emails when the job fails
+#PBS -m a
+
+#Rerun a job if it fails
+#PBS -r y
+
+
