@@ -1,8 +1,10 @@
-queue="batch"
+queue="blanca-ics"
 processors=1
-memory="4GB"
-standard_output="~/slurminator.out"
+memory="4G"
+standard_output="~/slurminator"
 job_name="testjob"
+program_filename="example.m"
+#Strings should include single quotes so that matlab will recognize them as strings.
 parameter_lists={"n_points":[(750,750)],
                  "dx":[(0.2,0.2)],
                  "dt":[0.015],
